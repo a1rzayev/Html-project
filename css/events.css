@@ -1,0 +1,6 @@
+.navbar > *:hover{
+    color: #ffffff;
+}
+.navbar > section:hover{
+    aria-expanded:true;
+}

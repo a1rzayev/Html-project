@@ -1,12 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;   
-	border: 0;
-    font-size: 14rem;
-}
+@import url("variables.css");
+
+
 ol, ul {
 	list-style: none;
 }
 header, nav, main, section, aside, footer{
-    background-color: white;
+    background-color: var(--default_color);
 }

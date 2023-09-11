@@ -1,4 +1,5 @@
 @import url("/css/reset.css");
+@import url("/css/styles.css");
+@import url("/css/events.css");
 @import url("/css/header.css");
 @import url("/css/footer.css");
-@import url("/css/variables.css");

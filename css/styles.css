@@ -1,0 +1,23 @@
+@import url("variables.css");
+
+
+
+.navbar{
+    background-color: var(--navbar_background_color);
+    border-color: var(--navbar_border_color);
+    max-height: var(--navbar_max_height);
+
+}
+body{
+    color: var(--default_color);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.navbar > *{
+    background-color: var(--navbar_background_color);
+    color: var(--default_color);
+    font-size: var(--navbar_elem_font_size);
+    
+}
+.this_page_button{
+    background-color: black;
+}
