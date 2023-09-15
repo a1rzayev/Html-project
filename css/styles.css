@@ -7,7 +7,7 @@ body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     min-width: var(--view_min_width);
 }
-.this_page_button{
+.this_page > *{
     background-color: black;
 }
 .navbar{
@@ -24,8 +24,11 @@ body{
     color: var(--default_color);
     font-size: var(--navbar_elem_font_size);
     max-height: var(--navbar_max_height);
-    
+    padding: 1em;
 } 
+.navbar_elems > li{
+    display: inline;
+}
 .navbar_elems{
     list-style-type: none;
 }
@@ -59,4 +62,8 @@ a{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+.header_elems{
+    display: grid;
+    grid-template-columns: 1fr 4fr auto 3fr 1fr;
 }
