@@ -9,34 +9,29 @@
 <body>
 
     <header>
-        <div class="container header_elems">
-            <p>
-            <nav class="navbar container">
-                <ul class="navbar_elems">
-                    <li class="this_page">
-                        <a href="index.html">Home</a>
-                    </li>
+        <div>
+            <a class="logo" href="#"><i class='bx bxs-hot bx-tada bx-rotate-90'></i>Logo</a>
+            <nav>
+                <ul class="page-navigation-links">
+                    <li><a class="now-page-link page-link" href="#">Home</a></li>
+                    <li><a class="page-link" href="#">About</a></li>
+                    <li><a class="page-link" href="#">Products</a></li>
                     <li>
-                        <a href="/html/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="/html/products.html">Products</a>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            Services
-                            <div class="dropdown_elems">
-                              <a href="#">Engage</a>
-                              <a href="#">Pontificate</a>
-                              <a href="#">Synergize</a>
-                            </div>
-                        </div>
+                        <a class="services page-link" href="#">Services <span class="caret"></span></a>
+                        <ul class="services-burger-menu">
+                            <li><a href="#Engage">Engage</a></li>
+                            <li><a href="#Pontificate">Pontificate</a></li>
+                            <li><a href="#Synergize">Synergize</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
-            <input type="text">
+        </div>
+        <div>
+            <input type="search">
             <button>Search</button>
         </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
 </body>

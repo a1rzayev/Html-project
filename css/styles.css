@@ -67,3 +67,14 @@ a{
     display: grid;
     grid-template-columns: 1fr 4fr auto 3fr 1fr;
 }
+
+.logo {
+    line-height: 50px;
+    font-size: 18px;
+    color: #959595;
+    padding-right: 15px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
