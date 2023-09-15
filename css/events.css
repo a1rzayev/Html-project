@@ -1,6 +1,13 @@
-.navbar > *:hover{
+@import url("/css/variables.css");
+
+.navbar_elems > li > *:hover{
     color: #ffffff;
+    font-weight: 500;
 }
-.navbar > section:hover{
-    aria-expanded:true;
+
+.dropdown:hover .dropdown_elems {
+    display: block;
+}
+:after, :before {
+    box-sizing: border-box;
 }

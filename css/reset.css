@@ -1,9 +1,6 @@
 @import url("variables.css");
 
 
-ol, ul {
-	list-style: none;
-}
 header, nav, main, section, aside, footer{
     background-color: var(--default_color);
 }
