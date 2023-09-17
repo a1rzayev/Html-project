@@ -16,37 +16,25 @@ header div {
     display: flex;
     flex-direction: row;
 }
-.page-navigation-links {
+.navigation_list {
     position: absolute;
     display: flex;
     flex-direction: row;
     margin-top: 15px;
 }
 
-.now-page-link {
-    color: white !important;
+.this_page_button {
+    color: white ;
     background-color: black;
 }
 
-.page-navigation-links a {
+.navigation_list a {
     color: #959595;
     padding: 17px 14px 17px 14px;
     font-size: 0.9rem;
 }
 
-.caret {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 2px;
-    vertical-align: middle;
-    border-top: 4px dashed;
-    border-top: 4px solid;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-}
-
-.services-burger-menu {
+.services_burger_menu {
     display: none;
     flex-direction: column;
     margin-top: 17px;
@@ -57,7 +45,7 @@ header div {
     border-radius: 0px 0px 4px 4px;
 }
 
-.services-burger-menu a {
+.services_burger_menu a {
     padding: 0;
     padding-right: 50%;
     padding-left: 9%;
@@ -70,7 +58,7 @@ header div {
 }
 
 
-input {
+input[type="search"] {
     height: 2.2rem;
     width: 12rem;
     padding: 4px 8px 4px 8px;
@@ -83,7 +71,7 @@ input {
 }
 
 
-header button {
+button {
     height: 2.2rem;
     width: 4.5rem;
     padding: 4px 10px 4px 10px;
@@ -117,3 +105,34 @@ header button {
     margin-right: 10px;
     transform: scale(1.15, 0.9);
 }
+nav li{
+    display: inline-block;
+    vertical-align: top;
+}
+@media screen and (max-width: 800px) {
+    header {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+    
+    nav, input, button {
+        display: none;
+    }
+    
+    #menu-icon{
+        display: inline;
+    }
+    #menu-icon:checked ~ ul {
+        display: block;
+    }    
+}
+
+
+

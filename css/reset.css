@@ -11,6 +11,9 @@ header, nav, main, section, aside, footer{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    list-style: none;
     appearance: none;
+}
+
+ul, ol{
+    list-style: none;
 }

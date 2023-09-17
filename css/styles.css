@@ -7,9 +7,6 @@ body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     min-width: var(--view_min_width);
 }
-.this_page > *{
-    background-color: black;
-}
 .navbar{
     background-color: var(--navbar_background_color);
     border-color: var(--navbar_border_color);
@@ -26,12 +23,6 @@ body{
     max-height: var(--navbar_max_height);
     padding: 1em;
 } 
-.navbar_elems > li{
-    display: inline;
-}
-.navbar_elems{
-    list-style-type: none;
-}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -77,4 +68,31 @@ a{
 
 input[type="search"]::-webkit-search-cancel-button {
     display: none;
+}
+
+.main_upper_side{
+    height: 368px;
+    min-width: var(--view_min_width);    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.engage_button{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.services_burger_menu > li{
+    background-color: white;
+}
+
+.feature {
+    background-color: var(--main_background_color);
+    color: var(--main_text_color);
 }

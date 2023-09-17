@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="index.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -12,13 +13,13 @@
         <div>
             <a class="logo" href="#"><i class='bx bxs-hot bx-tada bx-rotate-90'></i>Logo</a>
             <nav>
-                <ul class="page-navigation-links">
-                    <li><a class="now-page-link page-link" href="#">Home</a></li>
-                    <li><a class="page-link" href="#">About</a></li>
-                    <li><a class="page-link" href="#">Products</a></li>
+                <ul class="navigation_list">
+                    <li><a class="this_page_button page_button" href="#">Home</a></li>
+                    <li><a class="page_button" href="#">About</a></li>
+                    <li><a class="page_button" href="#">Products</a></li>
                     <li>
                         <a class="services page-link" href="#">Services <span class="caret"></span></a>
-                        <ul class="services-burger-menu">
+                        <ul class="services_burger_menu">
                             <li><a href="#Engage">Engage</a></li>
                             <li><a href="#Pontificate">Pontificate</a></li>
                             <li><a href="#Synergize">Synergize</a></li>
@@ -31,8 +32,22 @@
             <input type="search">
             <button>Search</button>
         </div>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <input type="checkbox" class="bx bx-menu" id="menu-icon">
     </header>
-
+    <main>
+        <div class="feature main_upper_side">
+            <ul>
+                <li>
+                    <h1>Dramatically Engage</h1>
+                </li>
+                <li>
+                    <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+                </li>
+                <li>
+                    <button class="engage_button">Engage</button>
+                </li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>
