@@ -1,15 +1,17 @@
-@import url("/css/variables.css");
-@import url("/css/header.css");
-@import url("/css/styles.css");
+@import url("../css/variables.css");
+@import url("../css/header.css");
+@import url("../css/styles.css");
 
 
 .navbar_elems > li > *:hover{
     color: #ffffff;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .dropdown:hover .dropdown_elems {
     display: block;
+    cursor: pointer;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -18,18 +20,20 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .logo:hover {
     color: white;
+    cursor: pointer;
 }
 
 header button:hover {
     background-color: #dbdbdb;
+    cursor: pointer;
 }
 
 header button:active {
     background-color: #dbdbdb;
-    box-shadow: inset 0 0 0 2px black;
 }
 .services_burger_menu li:hover {
     background-color: #eeeeee;
+    cursor: pointer;
 }
 
 .page_button:hover {
@@ -39,8 +43,9 @@ header button:active {
 .services_burger_menu,
 .services_burger_menu:hover {
     display: flex;
+    cursor: pointer;
 }
-#menu-icon:hover {
+#menu-icon:hover{
     cursor: pointer;
     background-color: #333;
 }

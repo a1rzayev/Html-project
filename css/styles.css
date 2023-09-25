@@ -1,11 +1,50 @@
-@import url("variables.css");
+@import url("../css/variables.css");
+@import url("../css/header.css");
+@import url("../css/footer.css");
 
 
+/* buttons */
+
+button {
+    height: 2.2rem;
+    padding: 4px 10px 4px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.vertical_nav_button {
+    display: none;
+    color: white;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: end;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 2px;
+    margin-right: 10px;
+    transform: scale(1.15, 0.9);
+}
+
+main{
+    grid-area: m;
+}
+
+main > *{
+    margin-bottom: 50px;
+}
 
 body{
     color: var(--default_color);
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    min-width: var(--view_min_width);
+    display: grid;
+    grid-template-areas: 
+    "h h h h h h h h h h h"
+    "m m m m m m m m m m m"
+    "m m m m m m m m m m m"
+    "m m m m m m m m m m m"
+    "f f f f f f f f f f f";
 }
 .navbar{
     background-color: var(--navbar_background_color);
@@ -13,7 +52,6 @@ body{
     max-height: var(--navbar_max_height);
     margin: 0 auto 0 auto;
     padding: 0 15px 0 15px;
-    max-width: var(--main_max_width);
 
 }
 .navbar_elems > li > *{
@@ -54,14 +92,10 @@ a{
     margin-right: auto;
     margin-left: auto;
 }
-.header_elems{
-    display: grid;
-    grid-template-columns: 1fr 4fr auto 3fr 1fr;
-}
 
 .logo {
     line-height: 50px;
-    font-size: 18px;
+    font-size: 20px;
     color: #959595;
     padding-right: 15px;
 }
@@ -70,29 +104,131 @@ input[type="search"]::-webkit-search-cancel-button {
     display: none;
 }
 
+
 .main_upper_side{
-    height: 368px;
-    min-width: var(--view_min_width);    
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 368px;  
+    padding-top: 100px;
+    padding-bottom: 100px;
     font-size: 1.5em;
-    font-weight: 200;
+    font-weight: 100;
     text-align: center;
+    background-color: var(--main_background_color);
+    color: var(--main_text_color);
+}
+.main_upper_side > *{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.main_middle_side{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: var(--view_max_width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_lower_side{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: var(--view_max_width);
 }
 
 .engage_button{
     color: #fff;
     background-color: #337ab7;
     border-color: #2e6da4;
+    width: 6.5rem;
 }
 
 .services_burger_menu > li{
     background-color: white;
 }
+div{
+    display: block;
+    
+}
+nav li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.page-container{
+    max-width: var(--view_max_width);
+    margin: 0 auto;
+    padding: 0;
+}
+.main_lower_side_elem{
+    max-height: 700px;
+    margin-bottom: 25px;
+    gap: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_lower_side_elem > p{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    color: #000000;
+    font-weight: 100;
+    font-size: 2.5em;
+}
 
-.feature {
-    background-color: var(--main_background_color);
-    color: var(--main_text_color);
+h2 small{
+    font-size: 0.7em;
+    color: var(--default_color);
+}
+
+img {
+    vertical-align: middle;
+}
+.main_image{
+    border-radius: 6px;
+    width: 300px;
+    height: 300px;
+}
+.menu-icon_image{
+    border-radius: 6px;
+    height: 40px;
+    width: 40px;
+    background-image: url("https://assets.stickpng.com/images/588a64e7d06f6719692a2d11.png");
+}
+h1{
+    font-size: 1.25em;
+    text-align: center;
+}
+/* media */
+@media (min-width: 768px){
+    h1{
+        font-size: 2em;
+    }
+    .main_upper_side{
+        height: 300px;
+    }
+}
+@media (min-width: 1000px){
+    .main_lower_side{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .main_lower_side_elem{
+        max-width: 300px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.copyright > *{
+    padding-top: 1em;
+    padding-bottom: 1em;
 }

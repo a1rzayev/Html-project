@@ -1,6 +1,6 @@
 :root{
     --view_min_width: 500px;
-    --main_max_width: 1170px;
+    --view_max_width: 1170px;
     --navbar_max_height: 340px;
     --burgermenu_height: 300px;
     --burgermenu_width: 700px;
