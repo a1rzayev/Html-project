@@ -1,6 +1,6 @@
-@import url("../css/variables.css");
-@import url("../css/header.css");
-@import url("../css/styles.css");
+@import url("variables.css");
+@import url("header.css");
+@import url("styles.css");
 
 
 .navbar_elems > li > *:hover{

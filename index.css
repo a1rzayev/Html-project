@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import url("../Html-project/css/reset.css");
-@import url("../Html-project/css/styles.css");
-@import url("../Html-project/css/events.css");
-@import url("../Html-project/css/header.css");
-@import url("../Html-project/css/footer.css");
+@import url("/css/reset.css");
+@import url("/css/styles.css");
+@import url("/css/events.css");
+@import url("/css/header.css");
+@import url("/css/footer.css");

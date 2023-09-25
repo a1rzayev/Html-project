@@ -1,4 +1,4 @@
-@import url("../css/variables.css");
+@import url("variables.css");
 
 /* tags */
 header {
@@ -137,7 +137,6 @@ input[type="search"] {
         justify-content: space-between;
         align-items: center;
     }
-    
 
     #menu-icon:checked +  nav > ul{
         left: 0%;
